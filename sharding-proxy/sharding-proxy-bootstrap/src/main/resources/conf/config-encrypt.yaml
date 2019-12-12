@@ -62,32 +62,32 @@
 #
 ######################################################################################################
 #
-#schemaName: encrypt_db
-#
-#dataSource:
-#  url: jdbc:mysql://127.0.0.1:3306/demo_ds?serverTimezone=UTC&useSSL=false
-#  username: root
-#  password:
-#  connectionTimeoutMilliseconds: 30000
-#  idleTimeoutMilliseconds: 60000
-#  maxLifetimeMilliseconds: 1800000
-#  maxPoolSize: 50
-#
-#encryptRule:
-#  encryptors:
-#    encryptor_aes:
-#      type: aes
-#      props:
-#        aes.key.value: 123456abc
-#    encryptor_md5:
-#      type: md5
-#  tables:
-#    t_encrypt:
-#      columns:
-#        user_id:
-#          plainColumn: user_plain
-#          cipherColumn: user_cipher
-#          encryptor: encryptor_aes
-#        order_id:
-#          cipherColumn: order_cipher
-#          encryptor: encryptor_md5
+schemaName: encrypt_db
+
+dataSource:
+  url: jdbc:mysql://127.0.0.1:3306/demo_ds?serverTimezone=UTC&useSSL=false
+  username: root
+  password:
+  connectionTimeoutMilliseconds: 30000
+  idleTimeoutMilliseconds: 60000
+  maxLifetimeMilliseconds: 1800000
+  maxPoolSize: 50
+
+encryptRule:
+  encryptors:
+    encryptor_aes:
+      type: aes
+      props:
+        aes.key.value: 123456abc
+    encryptor_md5:
+      type: md5
+  tables:
+    t_encrypt:
+      columns:
+        user_id:
+          plainColumn: user_plain
+          cipherColumn: user_cipher
+          encryptor: encryptor_aes
+        order_id:
+          cipherColumn: order_cipher
+          encryptor: encryptor_md5
