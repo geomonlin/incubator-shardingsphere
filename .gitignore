@@ -1,8 +1,22 @@
 # maven ignore
 target/
+<<<<<<< HEAD
 
 # hugo ignore
 public/
+=======
+*.class
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+
+# maven plugin ignore
+release.properties
+cobertura.ser
+*.gpg
+>>>>>>> 0d5bdd22903205a1148bc827a85d90f177628147
 
 # eclipse ignore
 .settings/
@@ -17,8 +31,13 @@ public/
 
 # temp ignore
 logs/
+<<<<<<< HEAD
 *.doc
 *.log
+=======
+*.log
+*.doc
+>>>>>>> 0d5bdd22903205a1148bc827a85d90f177628147
 *.cache
 *.diff
 *.patch
@@ -27,6 +46,9 @@ logs/
 # system ignore
 .DS_Store
 Thumbs.db
+<<<<<<< HEAD
 
 *.class
 *.html-e
+=======
+>>>>>>> 0d5bdd22903205a1148bc827a85d90f177628147
