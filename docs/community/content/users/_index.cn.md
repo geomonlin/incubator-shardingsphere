@@ -144,3 +144,4 @@ chapter = true
 1. 聚励云机械 https://www.cloudm.com/
 1. 连尚文学 http://read.zhulang.com/
 1. 公交云 http://www.dtchuxing.com/index.html
+1. 泰古信息 http://tigosoft.com/
